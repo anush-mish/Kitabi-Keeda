@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header id="header">
+       
+        <a href="#" class="logo"><img src="./images/logo.png"></a>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="form.html">Pricing</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <a href="form2.html">
+                <button class='loginbtn'>Login</button>
+                  </a> 
+        </ul>
+    </nav>
+    </header>
+    
+    <section class="container">
+        <header>Form</header>
+       <form action="#" class="form">
+           
+            <div class="input-box">
+                <label class="necessary">Book Name</label>
+                <input type="text" placeholder="Enter Book Name" required>
+            </div>
+
+            <div class="input-box">
+                <label class="necessary" >Author Name</label>
+                <input type="text" placeholder="Enter Author Name" required>
+            </div>
+            <div class="column">
+            <div class="input-box">
+                <label>Publisher</label>
+                <input type="text" placeholder="Enter Publisher Name" required>
+            </div>
+            <div class="input-box">
+                <label class="necessary">Published Year</label>
+                <input type="number" placeholder="Enter Published Year" min="1980" max="2024" required>
+            </div>
+        </div>
+        
+        <div class="board-box">
+            <h3 class="necessary">Board</h3>
+          <div class="board-option">
+            <div class="board">
+                <input type="radio" id="check-cbse" name="board" />
+                <label for="check-cbse">CBSE</label>
+            </div>
+            <div class="board">
+                <input type="radio" id="check-icse" name="board" />
+                <label for="check-icse">ICSE</label>
+            </div>
+            <div class="board">
+                <input type="radio" id="check-state" name="board" />
+                <label for="check-state">State</label>
+            </div>
+            <div class="board">
+                <input type="radio" id="check-jee" name="board" />
+                <label for="check-jee">JEE/NEET/WBJEE</label>
+            </div>
+            <div class="board">
+                <input type="radio" id="check-others" name="board" />
+                <label for="check-others">Others</label>
+            </div>
+          </div>
+        </div>
+              <div class="select-box">
+                <select>
+                    <option selected="true" disabled="disabled">What's the condition of your book?</option>
+                    <option>As good as new</option>
+                    <option>Used but no markings</option>
+                    <option>Missing a few pages</option>
+                    <option>Torn but has all pages</option>
+                    <option>Torn with few pages missing</option>
+                </select>
+             </div>  
+                
+             <div class="column">
+
+                <div class="free">
+                    <select>
+                        <option selected="true" disabled="disabled">Will you sell your book for free?</option>
+                        <option>Yes</option>
+                        <option>No</option>
+                        
+                    </select>
+                 </div>  
+
+                <div class="price">
+                    <label class="necessary" >Price(in Rs.)</label>
+                    <input type="text" placeholder="Price of your book" required>
+                </div>
+            
+                </div>
+                <div class="image">
+                    <input type="file" id="upload-btn" accept="image/*" multiple>
+                    <label for="upload-btn" class="necessary"><i class="fa-solid fa-upload"></i>Upload Image of your book</label>
+                    <div id="num-of-files">No files chosen</div>
+                    <ul id="files-list"></ul>
+                    </div>
+                  
+                    <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </section>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+</html>
